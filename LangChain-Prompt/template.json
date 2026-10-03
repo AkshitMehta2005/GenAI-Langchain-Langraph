@@ -1,0 +1,21 @@
+{
+  "lc": 1,
+  "type": "constructor",
+  "id": [
+    "langchain",
+    "prompts",
+    "prompt",
+    "PromptTemplate"
+  ],
+  "kwargs": {
+    "input_variables": [
+      "length_input",
+      "paper_input",
+      "style_input"
+    ],
+    "template": "\nPlease summarize the research paper titled \"{paper_input}\"\nwith the following specifications:\n\nExplanation Style: {style_input}\nExplanation Length: {length_input}\n\n1. Mathematical Details:\n   - Include relevant mathematical equations if present.\n   - Explain mathematical concepts with intuitive examples\n     and code snippets where applicable.\n\n2. Analogies:\n   - Use relatable analogies to simplify complex ideas.\n\nIf information is unavailable, state:\n\"Insufficient information available.\"\n\nEnsure the summary follows the requested style and length.\n",
+    "template_format": "f-string",
+    "validate_template": true
+  },
+  "name": "PromptTemplate"
+}
