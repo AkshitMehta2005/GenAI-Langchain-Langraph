@@ -25,6 +25,7 @@ model = ChatHuggingFace(llm=llm)
 
 chat_history = []
 # Chat loop
+
 while True:
     user_input = input("You: ")
     chat_history.append(user_input)
@@ -36,3 +37,4 @@ while True:
     result = model.invoke(chat_history)
     chat_history.append(result)
     print("AI:", result.content)
+
